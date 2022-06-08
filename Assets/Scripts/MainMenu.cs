@@ -17,6 +17,6 @@ public class MainMenu : MonoBehaviour
 
     public void OpenGithub()
     {
-        Application.OpenURL("https://github.com/nawodyaishan/GameDev-Snow-Boarder");
+        Application.OpenURL("https://github.com/nawodyaishan/GameDev-Quiz-Master");
     }
 }
