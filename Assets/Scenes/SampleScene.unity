@@ -316,6 +316,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3126837951070683425, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126837951070683425, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -347,6 +351,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3126837951070683426, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 70bb87f23a5eb49e28c500d7aba24b8b, type: 3}
     - target: {fileID: 3126837951070683871, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
       propertyPath: m_Name
       value: Answer Button 2
@@ -806,6 +814,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3126837951070683425, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126837951070683425, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -837,6 +849,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3126837951070683426, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 70bb87f23a5eb49e28c500d7aba24b8b, type: 3}
     - target: {fileID: 3126837951070683871, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
       propertyPath: m_Name
       value: Answer Button 4
@@ -1183,6 +1199,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3126837951070683425, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126837951070683425, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -1214,6 +1234,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3126837951070683426, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 70bb87f23a5eb49e28c500d7aba24b8b, type: 3}
     - target: {fileID: 3126837951070683871, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
       propertyPath: m_Name
       value: Answer Button 3
@@ -1322,37 +1346,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3126837951070683425, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3126837951070683425, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3126837951070683425, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 577378023}
-    - target: {fileID: 3126837951070683425, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3126837951070683425, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnAnswerSelected
-      objectReference: {fileID: 0}
-    - target: {fileID: 3126837951070683425, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Quiz, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3126837951070683425, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3126837951070683425, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 3126837951070683871, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
       propertyPath: m_Name
       value: Answer Button 1
