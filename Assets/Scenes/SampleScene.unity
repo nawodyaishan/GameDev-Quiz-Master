@@ -349,7 +349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3126837951070683871, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
       propertyPath: m_Name
-      value: Answer Button (1)
+      value: Answer Button 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
@@ -839,7 +839,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3126837951070683871, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
       propertyPath: m_Name
-      value: Answer Button (3)
+      value: Answer Button 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
@@ -1216,7 +1216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3126837951070683871, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
       propertyPath: m_Name
-      value: Answer Button (2)
+      value: Answer Button 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
@@ -1355,7 +1355,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3126837951070683871, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
       propertyPath: m_Name
-      value: Answer Button
+      value: Answer Button 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c005ffad17bfd4a8a99a04a942512ff1, type: 3}
