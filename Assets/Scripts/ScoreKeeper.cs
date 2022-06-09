@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -29,8 +30,8 @@ public class ScoreKeeper : MonoBehaviour
 
     public int CalculateScore()
     {
-        return correctAnswers;
-
+        return Convert.ToInt32((float)correctAnswers/(float) questionsSeen * 100);
+        // return Mathf.RoundToInt((float)correctAnswers/(float) questionsSeen * 100);
     }
     
 }
