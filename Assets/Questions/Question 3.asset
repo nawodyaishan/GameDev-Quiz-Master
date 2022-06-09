@@ -14,3 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   question: A variable can be used as "placeholders" to contain and manipulate data
     within C#
+  answers:
+  - True
+  - False
+  correctAnswer: 0

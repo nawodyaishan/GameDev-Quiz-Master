@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question
   m_EditorClassIdentifier: 
   question: Which piece of code is the correct procedure for creating a float variable
+  answers:
+  - public int speed = 2.2;
+  - public float speed = 2.2f;
+  - public bool = true;
+  - none of the above;
+  correctAnswer: 1
