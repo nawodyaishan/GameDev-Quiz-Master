@@ -12,11 +12,11 @@ public class Quiz : MonoBehaviour
 {
     [Header("Question")] QuestionSO currentQuestion;
     [SerializeField] TextMeshProUGUI questionText;
-    [SerializeField] private List<QuestionSO> questions = new List<QuestionSO>(); 
+    [SerializeField] private List<QuestionSO> questions = new List<QuestionSO>();
 
     [Header("Answer")] [SerializeField] private GameObject[] answerButtons;
     private int correctAnswerIndex;
-    private bool hasAnsweredEarly;
+    private bool hasAnsweredEarly =true;
 
     [Header("Button")] [SerializeField] private Sprite defaultAnswerSprite;
     [SerializeField] private Sprite correctAnswerSprite;
@@ -28,9 +28,6 @@ public class Quiz : MonoBehaviour
     void Start()
     {
         timer = FindObjectOfType<Timer>();
-
-        // AnswersToButton();
-        GetNextQuestion();
     }
 
     private void Update()
@@ -97,20 +94,20 @@ public class Quiz : MonoBehaviour
 
     void GetNextQuestion()
     {
-        SetButtonState(true);
-        SetDefaultButtonSprites();
-        GetRandomQuestion();
-        AnswersToButton();
-        
-        
-        
+        if (questions.Count > 0)
+        {
+            SetButtonState(true);
+            SetDefaultButtonSprites();
+            GetRandomQuestion();
+            AnswersToButton();
+        }
     }
 
     private void GetRandomQuestion()
     {
         int index = Random.Range(0, questions.Count);
         currentQuestion = questions[index];
-        
+
         if (questions.Contains(currentQuestion))
             questions.Remove(currentQuestion);
     }

@@ -275,8 +275,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeForCompleteQuestion: 15
   timeForShowCorrectAnswer: 5
-  loadNextQuestion: 0
-  isAnsweringQuestion: 1
+  loadNextQuestion: 1
+  isAnsweringQuestion: 0
   fillFraction: 0
 --- !u!1001 &479501929
 PrefabInstance:
@@ -631,6 +631,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 54657b36e02d14c0393a95373ed734f7, type: 2}
   - {fileID: 11400000, guid: ea759f670585344eea445544c8b0f905, type: 2}
   - {fileID: 11400000, guid: 8b74f03863d614c4182c2f0acdb99afb, type: 2}
+  - {fileID: 11400000, guid: 7e4a5a21ba43c40aeb770c167bf6b9d1, type: 2}
+  - {fileID: 11400000, guid: 077fa83ed25464313979b63ad7ec3f72, type: 2}
+  - {fileID: 11400000, guid: 8e4fd677b82f048f9ad638d34abee4c5, type: 2}
+  - {fileID: 11400000, guid: ebc7765a240224feeace5f9071a3602f, type: 2}
+  - {fileID: 11400000, guid: 136669f4531ca446cb6852bf63818540, type: 2}
+  - {fileID: 11400000, guid: d561c2ee0c43a4998b86a621b472033f, type: 2}
   - {fileID: 11400000, guid: bfc041cbc2e9e41538c7e5dbcbfdfc87, type: 2}
   answerButtons:
   - {fileID: 1266975647}
