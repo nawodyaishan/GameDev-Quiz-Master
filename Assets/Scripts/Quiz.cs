@@ -29,10 +29,10 @@ public class Quiz : MonoBehaviour
 
     [Header("Progress Bar"), SerializeField]
     private Slider progressBar;
-    [SerializeField] private bool quizIsComplete;
+    public bool quizIsComplete = false;
 
 
-    void Start()
+    void Awake()
     {
         timer = FindObjectOfType<Timer>();
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
@@ -85,6 +85,7 @@ public class Quiz : MonoBehaviour
         if (progressBar.value == progressBar.maxValue)
         {
             quizIsComplete = true;
+            return;
         }
     }
 

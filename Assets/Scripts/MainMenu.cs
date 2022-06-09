@@ -8,22 +8,6 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI finalScoreText;
-
-    private ScoreKeeper scoreKeeper;
-
-    private void Start()
-    {
-        scoreKeeper = FindObjectOfType<ScoreKeeper>();
-    }
-
-
-    void ShowFinalScore()
-    {
-        finalScoreText.text =
-            ($"Hehe, Not Bad.. Not terrible...\n\nCongratulations !!\n\nYour Score is {scoreKeeper.CalculateScore()}%");
-    }
-
     public void PlayGame()
     {
         SceneManager.LoadScene("SampleScene");
