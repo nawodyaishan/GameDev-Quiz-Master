@@ -18,4 +18,4 @@ MonoBehaviour:
   - Int
   - Double
   - Bool
-  correctAnswer: 0
+  correctAnswer: 1
