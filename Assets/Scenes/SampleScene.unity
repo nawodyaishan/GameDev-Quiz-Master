@@ -273,9 +273,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0301ee2273d84018ab65a8d98166840, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeForCompleteQuestion: 5
-  timeForShowCorrectAnswer: 10
+  timeForCompleteQuestion: 15
+  timeForShowCorrectAnswer: 5
+  loadNextQuestion: 0
   isAnsweringQuestion: 1
+  fillFraction: 0
 --- !u!1001 &479501929
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -623,8 +625,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec8d33c07e5ac462abe71cfd4206a94f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question: {fileID: 11400000, guid: 8b74f03863d614c4182c2f0acdb99afb, type: 2}
   questionText: {fileID: 1097478726}
+  questions:
+  - {fileID: 11400000, guid: 195c6ccea965b4bcebf9160eab6f765b, type: 2}
+  - {fileID: 11400000, guid: 54657b36e02d14c0393a95373ed734f7, type: 2}
+  - {fileID: 11400000, guid: ea759f670585344eea445544c8b0f905, type: 2}
+  - {fileID: 11400000, guid: 8b74f03863d614c4182c2f0acdb99afb, type: 2}
+  - {fileID: 11400000, guid: bfc041cbc2e9e41538c7e5dbcbfdfc87, type: 2}
   answerButtons:
   - {fileID: 1266975647}
   - {fileID: 479501931}
@@ -632,6 +639,7 @@ MonoBehaviour:
   - {fileID: 860900406}
   defaultAnswerSprite: {fileID: 21300000, guid: efe040fb3c523438cb15c8dc8866a184, type: 3}
   correctAnswerSprite: {fileID: 21300000, guid: 70bb87f23a5eb49e28c500d7aba24b8b, type: 3}
+  timerImage: {fileID: 2135415309}
 --- !u!1 &582971909
 GameObject:
   m_ObjectHideFlags: 0

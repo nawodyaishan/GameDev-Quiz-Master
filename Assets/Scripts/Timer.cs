@@ -38,7 +38,7 @@ public class Timer : MonoBehaviour
         {
             if (timerValue > 0)
             {
-                fillFraction = timerValue / timeForCompleteQuestion;
+                fillFraction = timerValue / timeForShowCorrectAnswer;
             }
             else
             {
