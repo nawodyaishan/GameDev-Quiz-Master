@@ -8,19 +8,22 @@ using UnityEngine.UI;
 
 public class Quiz : MonoBehaviour
 {
-    [SerializeField] QuestionSO question;
+    [Header("Question")] [SerializeField] QuestionSO question;
     [SerializeField] TextMeshProUGUI questionText;
-    [SerializeField] private GameObject[] answerButtons;
 
+    [Header("Answer")] [SerializeField] private GameObject[] answerButtons;
     private int correctAnswerIndex;
 
-    [SerializeField] private Sprite defaultAnswerSprite;
+    [Header("Button")] [SerializeField] private Sprite defaultAnswerSprite;
     [SerializeField] private Sprite correctAnswerSprite;
+
+    [Header("Timer")] [SerializeField] private Image timerImage;
+    private Timer timer;
 
     void Start()
     {
-       // AnswersToButton();
-       GetNextQuestion();
+        // AnswersToButton();
+        GetNextQuestion();
     }
 
     void AnswersToButton()
