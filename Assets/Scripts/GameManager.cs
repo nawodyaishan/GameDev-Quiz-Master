@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (quiz.quizIsComplete)
+        if (quiz.IsComplete)
         {
             quiz.gameObject.SetActive(false);
             endScreen.gameObject.SetActive(true);

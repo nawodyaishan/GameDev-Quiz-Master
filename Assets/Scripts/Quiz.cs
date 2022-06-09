@@ -30,7 +30,7 @@ public class Quiz : MonoBehaviour
     [Header("Progress Bar"), SerializeField]
     private Slider progressBar;
 
-    public bool quizIsComplete = false;
+    public bool IsComplete = false;
 
 
     void Awake()
@@ -49,7 +49,7 @@ public class Quiz : MonoBehaviour
         {
             if (progressBar.value == progressBar.maxValue)
             {
-                quizIsComplete = true;
+                IsComplete = true;
                 return;
             }
 
