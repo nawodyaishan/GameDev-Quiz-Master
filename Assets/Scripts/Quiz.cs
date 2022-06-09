@@ -29,27 +29,28 @@ public class Quiz : MonoBehaviour
 
     [Header("Progress Bar"), SerializeField]
     private Slider progressBar;
-
-    public bool IsComplete = false;
-
-
+    public bool isCompleted;
+    
     void Awake()
     {
         timer = FindObjectOfType<Timer>();
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
         progressBar.maxValue = questions.Count;
         progressBar.value = 0;
+        isCompleted = false;
     }
 
     private void Update()
     {
+        Debug.Log(isCompleted);
+
         FillAmountChange();
 
         if (timer.loadNextQuestion)
         {
-            if (progressBar.value == progressBar.maxValue)
+            if (Convert.ToInt32(progressBar.value) == Convert.ToInt32(progressBar.maxValue))
             {
-                IsComplete = true;
+                isCompleted = true;
                 return;
             }
 

@@ -9,23 +9,23 @@ public class GameManager : MonoBehaviour
     Quiz quiz;
     EndScreen endScreen;
 
-
-    private void Awake()
+    void Awake()
     {
         quiz = FindObjectOfType<Quiz>();
         endScreen = FindObjectOfType<EndScreen>();
     }
 
-    private void Start()
+    void Start()
     {
         quiz.gameObject.SetActive(true);
         endScreen.gameObject.SetActive(false);
     }
 
-
-    private void Update()
+    void Update()
     {
-        if (quiz.IsComplete)
+        Debug.Log(quiz.isCompleted);
+
+        if (quiz.isCompleted)
         {
             quiz.gameObject.SetActive(false);
             endScreen.gameObject.SetActive(true);
@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
 
     public void Restart()
     {
-        // SceneManager.LoadScene("SampleScene");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene("SampleScene");
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

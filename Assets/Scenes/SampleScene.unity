@@ -1240,7 +1240,7 @@ MonoBehaviour:
   timerImage: {fileID: 2135415309}
   scoreText: {fileID: 407138664}
   progressBar: {fileID: 1560522194}
-  quizIsComplete: 0
+  isComplete: 0
 --- !u!1 &582971909
 GameObject:
   m_ObjectHideFlags: 0
@@ -2832,8 +2832,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+      - m_Target: {fileID: 1592946590}
+        m_TargetAssemblyTypeName: EndScreen, Assembly-CSharp
         m_MethodName: BackToMainMenu
         m_Mode: 1
         m_Arguments:

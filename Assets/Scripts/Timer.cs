@@ -47,8 +47,6 @@ public class Timer : MonoBehaviour
                 loadNextQuestion = true;
             }
         }
-
-        Debug.Log($"Time remaining = {timerValue} {isAnsweringQuestion} \n {fillFraction}");
     }
 
     public void CancelTimer()
