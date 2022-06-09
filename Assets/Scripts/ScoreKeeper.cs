@@ -4,12 +4,33 @@ using UnityEngine;
 
 public class ScoreKeeper : MonoBehaviour
 {
-    
-    void Start()
+    private int correctAnswers;
+    private int questionsSeen;
+
+    public int CorrectAnswer()
     {
+        return correctAnswers;
     }
 
-    void Update()
+    public void IncrementCorrectAnswers()
     {
+        correctAnswers++;
     }
+
+    public int GetQuestionsSeen()
+    {
+        return questionsSeen;
+    }
+    
+    public void IncrementQuestionsSeen()
+    {
+        questionsSeen++;
+    }
+
+    public int CalculateScore()
+    {
+        return correctAnswers;
+
+    }
+    
 }
