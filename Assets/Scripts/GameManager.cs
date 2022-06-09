@@ -14,10 +14,14 @@ public class GameManager : MonoBehaviour
     {
         quiz = FindObjectOfType<Quiz>();
         endScreen = FindObjectOfType<EndScreen>();
+    }
 
+    private void Start()
+    {
         quiz.gameObject.SetActive(true);
         endScreen.gameObject.SetActive(false);
     }
+
 
     private void Update()
     {
