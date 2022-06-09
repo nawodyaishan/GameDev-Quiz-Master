@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-     Quiz quiz;
-     EndScreen endScreen;
+    Quiz quiz;
+    EndScreen endScreen;
 
 
     private void Awake()

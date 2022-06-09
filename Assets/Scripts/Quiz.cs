@@ -29,6 +29,7 @@ public class Quiz : MonoBehaviour
 
     [Header("Progress Bar"), SerializeField]
     private Slider progressBar;
+
     public bool quizIsComplete = false;
 
 
@@ -46,6 +47,12 @@ public class Quiz : MonoBehaviour
 
         if (timer.loadNextQuestion)
         {
+            if (progressBar.value == progressBar.maxValue)
+            {
+                quizIsComplete = true;
+                return;
+            }
+
             hasAnsweredEarly = false;
             GetNextQuestion();
             timer.loadNextQuestion = false;
@@ -81,12 +88,6 @@ public class Quiz : MonoBehaviour
         SetButtonState(false);
         timer.CancelTimer();
         scoreText.text = "Score : " + scoreKeeper.CalculateScore() + "%";
-
-        if (progressBar.value == progressBar.maxValue)
-        {
-            quizIsComplete = true;
-            return;
-        }
     }
 
     void DisplayAnswer(int index)

@@ -22,7 +22,7 @@ public class ScoreKeeper : MonoBehaviour
     {
         return questionsSeen;
     }
-    
+
     public void IncrementQuestionsSeen()
     {
         questionsSeen++;
@@ -30,8 +30,7 @@ public class ScoreKeeper : MonoBehaviour
 
     public int CalculateScore()
     {
-        return Convert.ToInt32((float)correctAnswers/(float) questionsSeen * 100);
+        return Convert.ToInt32((float) correctAnswers / (float) questionsSeen * 100);
         // return Mathf.RoundToInt((float)correctAnswers/(float) questionsSeen * 100);
     }
-    
 }
