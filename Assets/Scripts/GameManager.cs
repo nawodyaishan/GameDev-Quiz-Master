@@ -22,10 +22,14 @@ public class GameManager : MonoBehaviour
     }
 
     void Update()
-    {
-        Debug.Log(quiz.isCompleted);
+    { 
+        if (!quiz.isQuizCompleted)
+        {
+            quiz.gameObject.SetActive(true);
+            endScreen.gameObject.SetActive(false);
 
-        if (quiz.isCompleted)
+        }
+        else if (quiz.isQuizCompleted)
         {
             quiz.gameObject.SetActive(false);
             endScreen.gameObject.SetActive(true);
@@ -35,7 +39,7 @@ public class GameManager : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene("SampleScene");
-        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //SceneManager.LoadScene("SampleScene");
+         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

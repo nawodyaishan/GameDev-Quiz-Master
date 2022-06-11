@@ -17,4 +17,6 @@ MonoBehaviour:
   answers:
   - True
   - False
+  - False
+  - False
   correctAnswer: 0
